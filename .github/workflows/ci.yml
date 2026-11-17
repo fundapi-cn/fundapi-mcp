@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install deps
+        run: pip install -r requirements.txt pytest
+      - name: Import and tool count
+        run: python -c "import mcp_fund; print('tools:', len(mcp_fund.TOOLS)); assert len(mcp_fund.TOOLS) == 19"
+      - name: Tests
+        run: pytest -q
