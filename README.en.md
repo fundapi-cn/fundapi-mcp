@@ -203,6 +203,9 @@ python mcp_fund.py --selftest     # calls the REST API directly, no MCP server
 **Do free tools really need no key?**
 No key needed. `fund_search` / `fund_profile` / `fund_screener_options` work without `FUND_KEY`, with anonymous rate limits per IP (10/min, 500/day).
 
+**Which funds are covered? Will ETFs or QDII be added?**
+Currently open-end mutual funds in mainland China, including money-market funds. ETFs, LOFs and QDII funds are planned; new products arrive as new endpoints without changing existing tool names or call patterns.
+
 **Are MCP and HTTP different products?**
 No. Same endpoints, same key, same quota; MCP is just another way to call them.
 

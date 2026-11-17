@@ -205,6 +205,9 @@ python mcp_fund.py --selftest     # 直连 REST 验证工具可用性（不启 M
 **免费工具真的不用 Key？**
 是。`fund_search` / `fund_profile` / `fund_screener_options` 不填 `FUND_KEY` 也能调，匿名按 IP 限流（每分钟 10 次 / 每天 500 次）。
 
+**覆盖哪些基金？以后会加 ETF / QDII 吗？**
+当前覆盖场外公募基金（含货币基金）。ETF / LOF 等场内品种、QDII 等在规划中；新增品种会以新端点提供，现有工具名与调用方式不变。
+
 **MCP 和 HTTP 是两个产品吗？**
 不是。同一套端点、同一个 Key、同一份额度；MCP 只是给 AI Agent 的调用方式。
 
