@@ -22,3 +22,5 @@ jobs:
         run: python -c "import mcp_fund; print('tools:', len(mcp_fund.TOOLS)); assert len(mcp_fund.TOOLS) == 19"
       - name: Tests
         run: pytest -q
+      - name: Stdio handshake
+        run: python tests/check_stdio.py

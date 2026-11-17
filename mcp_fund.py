@@ -49,7 +49,7 @@ _PRICING_URL = "https://fundapi.cn/pricing"
 _PRICE = {"free": "免费", "trial": "体验版 ¥9.9/7天", "pro": "¥59/月", "institutional": "¥299/月"}
 
 # 服务版本：格式 `YYYY.M.D`（不补零，否则不是合法 SemVer），取值 = REST 的 VERSION 日期
-SERVER_VERSION = "2026.11.8"
+SERVER_VERSION = "2026.11.17"
 
 
 # ── 工具定义（表驱动：name → (路径, 说明, 参数 schema)）─────────

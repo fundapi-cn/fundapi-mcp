@@ -168,6 +168,7 @@ pip install -r requirements.txt
 
 ```bash
 python mcp_fund.py --selftest     # 直连 REST 验证工具可用性（不启 MCP）
+python tests/check_stdio.py       # 本地 stdio 握手 + 工具数（应为 19）
 ```
 
 ---

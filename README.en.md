@@ -166,6 +166,7 @@ Screen the top 20 stock funds by 1-year return
 
 ```bash
 python mcp_fund.py --selftest     # calls the REST API directly, no MCP server
+python tests/check_stdio.py       # local stdio handshake + tool count (expects 19)
 ```
 
 ---
