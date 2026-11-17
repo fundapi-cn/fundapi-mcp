@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://fundapi.cn/en/"><img src="https://fundapi.cn/apple-touch-icon.png" width="88" height="88" alt="fundapi"></a>
+<a href="https://fundapi.cn/en/"><img src="https://fundapi.cn/icon-512.png" width="88" height="88" alt="fundapi"></a>
 
 # fundapi — Official MCP Server for the Fund Data API
 
@@ -34,9 +34,7 @@ Let Claude Code / Codex / Cursor / any **AI Agent (MCP)** query fund data direct
 
 ## What it is
 
-A **fund data MCP**: it exposes 19 fund-data endpoints as **tools** an AI agent can call directly. Configure it once; from then on you can ask "what are the fees on this fund and how does its 1-year return rank among peers?" and the agent fetches **real data** by itself — no code, no pasting usage instructions every time.
-
-> We sell a **data API**, not investment advice, not fund distribution, and not discretionary management. Returned values are not buy or sell recommendations.
+A **fund data MCP**: 19 fund-data tools an AI agent can call directly. Configure it once; from then on you can ask "what are the fees on this fund and how does its 1-year return rank among peers?" and the agent fetches **real data** by itself — no code, no pasting usage instructions every time.
 
 ---
 

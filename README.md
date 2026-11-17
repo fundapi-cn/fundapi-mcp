@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://fundapi.cn"><img src="https://fundapi.cn/apple-touch-icon.png" width="88" height="88" alt="fundapi"></a>
+<a href="https://fundapi.cn"><img src="https://fundapi.cn/icon-512.png" width="88" height="88" alt="fundapi"></a>
 
 # fundapi — 基金数据 API 官方 MCP 服务器
 
@@ -34,9 +34,7 @@
 
 ## 这是什么
 
-一个 **基金数据 MCP**：把 19 个基金数据端点封装成 AI Agent 能直接调用的**工具**。配一次，之后你问「易方达消费行业这只基金费率多少、近一年在同类里排第几」，Agent 自己会去调对应工具拿**真实数据** —— 不用你写代码，也不用每次把用法贴给它。
-
-> 我们卖的是**数据接口**，不是投资建议、不是基金销售，也不代客理财。接口返回值不构成买卖建议。
+一个 **基金数据 MCP**：提供 19 个基金数据工具，AI Agent 配一次就能直接调用。之后你问「易方达消费行业这只基金费率多少、近一年在同类里排第几」，Agent 自己会拿**真实数据** —— 不用你写代码，也不用每次把用法贴给它。
 
 ---
 
