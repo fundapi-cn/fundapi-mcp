@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-"""场外公募基金数据 API 的 MCP Server —— 让 AI / LLM / Agent 直接消费基金数据。
+"""基金数据 API 的 MCP Server —— 让 AI / LLM / Agent 直接查询基金数据。
 
 配置（Claude Desktop / Cursor / Dify / 任意 MCP 客户端）：
 
 ```json
 {
   "mcpServers": {
-    "fund": {
+    "fundapi": {
       "command": "python",
       "args": ["/path/to/mcp_fund.py"],
       "env": {
@@ -530,7 +530,7 @@ def selftest():
         elif st in (401, 403):
             # 档位门槛：没配 Key（401）或当前档位不够（403）。
             # ⚠️ 这不算失败，但**必须列出来** —— 如果 Key 已开通机构版却看到 GATED，
-            #    那就是真问题（档位表配错了），不能静默放过。
+            #    那就是真问题（档位配置不对），不能静默放过。
             ok, note = True, "  GATED %d（%s）" % (
                 st, "未配 Key" if st == 401 else "当前档位不够")
             gated.append(name)
@@ -546,7 +546,7 @@ def selftest():
     if gated:
         print("  被拦：%s" % " / ".join(gated))
         print("  ⚠️ 如果你的 Key 已开通机构版，上面这些应该返回 200 —— "
-              "看到 GATED 就说明档位表配错了")
+              "看到 GATED 说明你的 Key 档位与该端点不匹配")
     if not KEY:
         print(f"  未配 FUND_KEY：{free_n} 个免费工具可直接用，其余需 Key")
 
