@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://fundapi.cn/en/"><img src="https://fundapi.cn/icon-512.png" width="88" height="88" alt="fundapi"></a>
+<a href="https://fundapi.cn/en/"><img src="assets/icon-512.png" width="88" height="88" alt="fundapi"></a>
 
 # fundapi — Official MCP Server for the Fund Data API
 
