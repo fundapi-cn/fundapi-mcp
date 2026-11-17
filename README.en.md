@@ -34,7 +34,7 @@ Let Claude Code / Codex / Cursor / any **AI Agent (MCP)** query fund data direct
 
 ## What it is
 
-A **fund data MCP**: 19 fund-data tools an AI agent can call directly. Configure it once; from then on you can ask "what are the fees on this fund and how does its 1-year return rank among peers?" and the agent fetches **real data** by itself — no code, no pasting usage instructions every time.
+A **fund data MCP**: 19 fund-data tools an AI Agent can call directly. Configure it once; from then on you can ask "what are the fees on this fund and how does its 1-year return rank among peers?" and the agent fetches **real data** by itself — no code, no pasting usage instructions every time.
 
 ---
 

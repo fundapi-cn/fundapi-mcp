@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""基金数据 API 的 MCP Server —— 让 AI / LLM / Agent 直接查询基金数据。
+"""基金数据 API 的 MCP Server —— 让 AI Agent 直接查询基金数据。
 
 配置（Claude Desktop / Cursor / Dify / 任意 MCP 客户端）：
 
@@ -24,7 +24,7 @@
   "这只基金换过几次基金经理"
   "我这两只基金有没有重复买"
   "帮我找几只晨星五星的消费主题基金
-→ AI 自动调用下面的工具拿真实数据（不是编造）。
+→ AI Agent 自动调用下面的工具拿真实数据（不是编造）。
 
 自测：python mcp_fund.py --selftest
 """
@@ -361,11 +361,11 @@ def _call(path: str, **params):
 
 
 def _friendly(status: int, text: str) -> str:
-    """把 REST 的错误换成「AI 和客户都能看懂、且知道下一步做什么」的话。
+    """把 REST 的错误换成「AI Agent 和客户都能看懂、且知道下一步做什么」的话。
 
     🔴 这一层唯一必须写对的事：**403 不能说成「服务出错」**。
        403 = 档位不够，是「该升级」；说成「查询失败、稍后再试」的话，
-       AI 会照原话告诉客户，客户就永远不知道该掏钱 —— 这是最伤转化的一种错。
+       AI Agent 会照原话告诉客户，客户就永远不知道该掏钱 —— 这是最伤转化的一种错。
 
     基金线的状态码语义（`app.py::_auth`）：
         401  没配 Key / Key 无效
