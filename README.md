@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://fundapi.cn"><img src="assets/icon-512.png" width="88" height="88" alt="fundapi"></a>
+<a href="https://fundapi.cn"><img src="https://fundapi.cn/icon-512.png" width="88" height="88" alt="fundapi"></a>
 
 # fundapi — 基金数据 API 官方 MCP 服务器
 
