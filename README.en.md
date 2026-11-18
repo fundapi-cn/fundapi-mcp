@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://fundapi.cn/en/"><img src="https://fundapi.cn/icon-512.png" width="88" height="88" alt="fundapi"></a>
+<a href="https://fundapi.cn/en/"><img src="https://fundapi.cn/icon-round.png" width="88" height="88" alt="fundapi"></a>
 
 # fundapi — Official MCP Server for the Fund Data API
 
@@ -113,6 +113,18 @@ claude mcp list   # should show a connected entry
 **China platforms** (URL + header, nothing to install): Alibaba Cloud Bailian · Coze · Tencent Yuanqi · Tencent Cloud Agent Platform · Volcano Ark
 
 > Full per-client configuration (keys differ, do not copy blindly): <https://fundapi.cn/en/mcp>
+
+---
+
+## DeepSeek Harness plugin
+
+Inside DeepSeek Harness (DSH) there is no JSON to write by hand — install one plugin and the same 19 tools are available.
+
+```bash
+dsh plugin --profile web add fundapi-dsh-plugin
+```
+
+The desktop app and the Web UI also accept the package name `fundapi-dsh-plugin` on the Plugins page. See <https://fundapi.cn/en/dsh/>.
 
 ---
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://fundapi.cn"><img src="https://fundapi.cn/icon-512.png" width="88" height="88" alt="fundapi"></a>
+<a href="https://fundapi.cn"><img src="https://fundapi.cn/icon-round.png" width="88" height="88" alt="fundapi"></a>
 
 # fundapi — 基金数据 API 官方 MCP 服务器
 
@@ -115,6 +115,18 @@ claude mcp list   # 验证：应显示 √ Connected
 **国内平台**（同样填 URL + 请求头，无需安装任何东西）：阿里云百炼 · 扣子 Coze · 腾讯元器 · 腾讯云智能体开发平台 · 火山方舟
 
 > 各家完整配置写法（键名不一样，别照抄）：<https://fundapi.cn/mcp>
+
+---
+
+## DeepSeek Harness 插件
+
+在 DeepSeek Harness（DSH）里不用手写 JSON —— 装一个插件，工具与上面 19 个完全一致。
+
+```bash
+dsh plugin --profile web add fundapi-dsh-plugin
+```
+
+桌面端 / Web UI 也可以直接在「插件」页面输入包名 `fundapi-dsh-plugin`。说明见 <https://fundapi.cn/dsh/>。
 
 ---
 
